@@ -1,0 +1,29 @@
+<style>
+    body,
+    html,
+    .test {
+        display: block;
+        background: white;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<div class="lol">
+    <img id="god" src="http://www.bmatraffic.com/show.aspx?image=253">
+</div>
+<script>
+    setInterval(function () {
+        var loc = "http://www.bmatraffic.com/show.aspx?image=253&&time=" + new Date().getTime();
+        $("#god").attr("src", loc);
+    }, 1000);
+</script>
